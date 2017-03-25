@@ -5,10 +5,11 @@ var CarLot = (function() {
     var cars = [];
 
     function carDom(carData) {
+console.log(carData);
         var carString = "";
         var currentCar;
-        for (var i = 0; i < cars.length; i++) {
-            currentCar = carData.cars[i];
+        for (var i = 0; i < carData.length; i++) {
+            currentCar = carData[i];
             carString += `<div class="col-sm-6 col-md-4">`;
             carString += `<div class="container">`;
             carString += `<h3>${currentCar.make}</h3>`;
@@ -27,17 +28,47 @@ var CarLot = (function() {
         loadInventory: function(callback) {
 
 
-            var carData = JSON.parse(this.responseText);
-            carDom(carData);
+            
 
 
             var inventoryLoader = new XMLHttpRequest();
+            
             inventoryLoader.addEventListener("load", function() {
-                inventoryLoader.open("GET", "inventory.json");
-                inventoryLoader.send();
-
+            	var carData = JSON.parse(this.responseText).cars;
+            carDom(carData);
             });
+            inventoryLoader.open("GET", "inventory.json");
+            inventoryLoader.send();
         }
     };
 
 })();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
