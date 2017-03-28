@@ -7,13 +7,13 @@ function selectCar() {
 var cars = document.getElementsByClassName("container");
 
 for (var j = 0; j < cars.length; j++) {
-        cars[j].style.border = "solid black 1px";
+        cars[j].style.border = "solid black 5px";
     }
 
-    if (cars.target.classList.contains("container")) {
-        cars.target.style.border = "solidBlack 5px";
-        cars = carLot.target;
-    } 
+    // if (cars.target.contains("container")) {
+    //     cars.target.style.border = "solidBlack 5px";
+    //     cars = carLot.target;
+    // } 
     
 }
 
