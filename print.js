@@ -1,17 +1,21 @@
 var CarLot = (function(cars) {
 
   //  events if/else statements. 
+ carContainer.addEventListener("click", selectCar);
 
-// for (var i = 0; i < cards.length; i++) {
-//         cards[i].style.border = "solid black 1px";
-//     }
+function selectCar() {
+var cars = document.getElementsByClassName("container");
 
-    if (carData.target.classList.contains("container")) {
-        carData.target.style.border = " 5px";
-        carData = carLot.target;
+for (var j = 0; j < cars.length; j++) {
+        cars[j].style.border = "solid black 1px";
+    }
+
+    if (cars.target.classList.contains("container")) {
+        cars.target.style.border = "solidBlack 5px";
+        cars = carLot.target;
     } 
-    document.getElementById("text").focus();
+    
+}
 
-
-    // return cars;
+    return cars;
 })(CarLot || {});

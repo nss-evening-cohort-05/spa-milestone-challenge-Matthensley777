@@ -1,7 +1,6 @@
 var CarLot = (function() {
 
     var carContainer = document.getElementById("carContainer");
-    var cars = [];
 
     function carDom(carData) {
         console.log(carData);
