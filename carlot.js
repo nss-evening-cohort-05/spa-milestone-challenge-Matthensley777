@@ -10,7 +10,7 @@ var CarLot = (function() {
             currentCar = carData[i];
             carString += `<div class="col-sm-5 col-md-2">`;
             carString += `<div id="container" class="container">`;
-            carString += `<h3> Make: ${currentCar.make}</h3>`;
+            carString += `<h3 class="child" > Make: ${currentCar.make}</h3>`;
             carString += `<p> Model: ${currentCar.model}</p>`;
             carString += `<p> Year: ${currentCar.year}</p>`;
             carString += `<p> Price: $${currentCar.price}</p>`;
