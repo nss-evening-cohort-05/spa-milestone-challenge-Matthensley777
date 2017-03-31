@@ -13,10 +13,15 @@ var CarLot = (function(cars) {
 
         if (e.target.classList.contains("container")) {
             e.target.style.border = "solid black 5px";
+            e.target.parentNode.style.backgroundColor = "lightgrey";
+            e.target.parentNode.style.maxWidth = "200px";
             currentCar = e.target.childNodes[1];
         } else if (e.target.classList.contains("child")) {
-            e.target.parentNode.style.backgroundColor = "lightgrey";
+            e.target.parentNode.style.maxWidth = "200px";
             currentCar = e.target.childNodes[1];
+        } else if (e.target.classList.contains("child")) {
+        	e.target.parentNode.childNodes.style.backgroundColor ="lightgrey";
+        	currentCar = e.target.childNodes[1];
         }
     }
 
