@@ -23,6 +23,7 @@ var CarLot = (function(cars) {
         	e.target.parentNode.childNodes.style.backgroundColor ="lightgrey";
         	currentCar = e.target.childNodes[1];
         }
+        document.getElementById("text").focus();
     }
 
     return cars;

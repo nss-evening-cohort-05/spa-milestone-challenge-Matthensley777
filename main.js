@@ -5,11 +5,18 @@
             // Loop over the inventory and populate the page
 
 
+document.getElementById("text").addEventListener("keyup", carBoundToText);
+
+function carBoundToText(e) {
+    if (e.keyCode === 13) {
+        document.getElementById("text").value = "";
+    } else {
+        currentCar.innerHTML = document.getElementById("text").value;
+    }
+}
 
 
-            // Now that the DOM is loaded, establish all the event listeners needed
-            CarLot.activateEvents();
-            
+          
             
 }
         
