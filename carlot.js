@@ -1,9 +1,12 @@
-var CarLot = (function() {
+var CarLot = (function(cars) {
+
+     cars.selectCar = function(carType) {
+        return cars [carType];
+    }
 
     var carContainer = document.getElementById("carContainer");
 
     function carDom(carData) {
-        console.log(carData);
         var carString = "";
         var currentCar;
         for (var i = 0; i < carData.length; i++) {
@@ -14,7 +17,7 @@ var CarLot = (function() {
             carString += `<p> Model: ${currentCar.model}</p>`;
             carString += `<p> Year: ${currentCar.year}</p>`;
             carString += `<p> Price: $${currentCar.price}</p>`;
-            carString += `<p> Description: ${currentCar.description}</p>`;
+            carString += `<p class="description" id="description"> Description: ${currentCar.description}</p>`;
             carString += `</div></div>`;
 
             carContainer.innerHTML = carString;
@@ -28,7 +31,6 @@ var CarLot = (function() {
             inventoryLoader.addEventListener("load", function() {
 
                 var carData = JSON.parse(this.responseText).cars;
-                console.log(carData)
                 cars = carData;
                 carDom(carData);
             });
@@ -39,6 +41,10 @@ var CarLot = (function() {
         	return cars;
         }
     };
+
+   
+
+    return cars;
 
 })(CarLot || {});
 
