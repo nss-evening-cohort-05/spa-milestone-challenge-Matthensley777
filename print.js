@@ -1,10 +1,10 @@
 var CarLot = (function(cars) {
     var currentCar;
 
-    cars.selectCar = function(carType) {
-    	return cars [carType];
-    }
+    // cars.selectCar = function(carType) {
+    // }
 
+    
     //  events if/else statements. 
     carContainer.addEventListener("click", selectCar);
 
@@ -27,6 +27,13 @@ var CarLot = (function(cars) {
         }
         document.getElementById("text").focus();
     }
+
+//     return {
+
+//     getPrintCar : function() {
+//         	return cars;
+//         }
+// }
 
 // document.getElementById("text").addEventListener("keyup", carBoundToText);
 

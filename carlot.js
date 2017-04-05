@@ -1,8 +1,7 @@
 var CarLot = (function(cars) {
 
-     cars.selectCar = function(carType) {
-        return cars [carType];
-    }
+    //  cars.selectCar = function(carType) {
+    // }
 
     var carContainer = document.getElementById("carContainer");
 

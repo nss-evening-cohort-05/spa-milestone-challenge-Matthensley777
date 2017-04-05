@@ -2,11 +2,8 @@
 
 
 
-cars.selectCar = function(carType) {
-    	return cars [carType];
-    }
 
-        function populatePage(inventory) {
+
             // Loop over the inventory and populate the page
 
 
@@ -19,7 +16,16 @@ cars.selectCar = function(carType) {
                     currentCar.innerHTML = document.getElementById("text").value;
                 }
             }
-		}
+
+            return {
+   selectCar: function(carType) {
+    },
+
+    	getMainCar : function() {
+    		return cars;
+    	}
+    }
+		
 
 
         // Load the inventory and send a callback function to be
@@ -27,6 +33,6 @@ cars.selectCar = function(carType) {
         CarLot.loadInventory();
 
 
-    // return cars;
+    return cars;
 
     })(CarLot || {});
