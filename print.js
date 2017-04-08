@@ -1,8 +1,7 @@
 var CarLot = (function(cars) {
     var currentCar;
 
-    // cars.selectCar = function(carType) {
-    // }
+    
 
     
     //  events if/else statements. 
@@ -14,36 +13,23 @@ var CarLot = (function(cars) {
        
 
         if (e.target.classList.contains("container")) {
-        	// console.log(container)
-            // e.target.style.border = "solid black 5px";
-            // e.target.parentNode.style.backgroundColor = "lightgrey";
-            // e.target.parentNode.style.maxWidth = "200px";
-            // currentCar = e.target.childNodes[1];
-        // } else if (e.target.classList.contains("child")) {
-        // 	console.log(container)
-        //     e.target.parentNode.style.maxWidth = "200px";
-        //     currentCar = e.target.childNodes[1];
+        	console.log(container)
+            currentCar = e.target.childNodes[4];
+        } else if (e.target.classList.contains("child")) {
+        	console.log(container)
+            currentCar = e.target.childNodes[4];
 
         }
         document.getElementById("text").focus();
     }
 
-//     return {
+    
+   cars.getCurrentCar = function() {
+        return currentCar;
+   }
 
-//     getPrintCar : function() {
-//         	return cars;
-//         }
-// }
 
-// document.getElementById("text").addEventListener("keyup", carBoundToText);
 
-// function carBoundToText(e) {
-//     if (e.keyCode === 13) {
-//         document.getElementById("text").value = "";
-//     } else {
-//         currentCar.innerHTML = document.getElementById("text").value;
-//     }
-// }
 
 
 
@@ -51,6 +37,3 @@ var CarLot = (function(cars) {
 })(CarLot || {});
 
 
-//cars.selectCar = function() {}
-
-//cars.getCurrentCar

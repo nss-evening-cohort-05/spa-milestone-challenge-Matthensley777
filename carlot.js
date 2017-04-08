@@ -1,7 +1,6 @@
-var CarLot = (function(cars) {
+var CarLot = (function() {
 
-    //  cars.selectCar = function(carType) {
-    // }
+     
 
     var carContainer = document.getElementById("carContainer");
 
@@ -43,7 +42,6 @@ var CarLot = (function(cars) {
 
    
 
-    return cars;
 
 })(CarLot || {});
 
