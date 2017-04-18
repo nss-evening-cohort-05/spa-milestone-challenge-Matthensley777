@@ -27,7 +27,8 @@ You operate a used car lot, and need to have an application where you can update
 
 ### A bit of the code which allows you to select each card.
 
-`for (var i = 0; i < cars.length; i++) {
+```
+for (var i = 0; i < cars.length; i++) {
             cars[i].classList.remove("selected");
         }
         if (e.target.classList.contains("mainCard")) {
@@ -48,7 +49,8 @@ You operate a used car lot, and need to have an application where you can update
 
     cars.getCurrentCar = function() {
         return currentCar;
-    }`
+    }
+    ```
 
 
 
