@@ -1,0 +1,11 @@
+#container {
+	max-width: 200px;
+	height: 200px;
+}
+
+.selected {
+	max-width: 200px;
+	height: 200px;
+	background-color: lightgray;
+	border: solid black 5px;
+}
