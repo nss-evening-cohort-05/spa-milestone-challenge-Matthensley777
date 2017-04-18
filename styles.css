@@ -1,10 +1,11 @@
-.container {
+#container {
 	max-width: 200px;
 	height: 200px;
-	border: solid black 1px;
 }
 
-.container:active {
-    border: solid black 5px;
-    background-color: lightgray;
+.selected {
+	max-width: 200px;
+	height: 200px;
+	background-color: lightgray;
+	border: solid black 5px;
 }

@@ -9,13 +9,13 @@ var CarLot = (function() {
         var currentCar;
         for (var i = 0; i < carData.length; i++) {
             currentCar = carData[i];
-            carString += `<div class="col-sm-5 col-md-2">`;
-            carString += `<div id="container" class="container">`;
-            carString += `<h3 class="child" > Make: ${currentCar.make}</h3>`;
-            carString += `<p> Model: ${currentCar.model}</p>`;
-            carString += `<p> Year: ${currentCar.year}</p>`;
-            carString += `<p> Price: $${currentCar.price}</p>`;
-            carString += `<p class="description" id="description"> Description: ${currentCar.description}</p>`;
+            carString += `<div class="col-sm-5 col-md-2 mainCard">`;
+            carString += `<div id="container" class="child">`;
+            carString += `<h3 class="grandChild" > Make: ${currentCar.make}</h3>`;
+            carString += `<p class="grandChild"> Model: ${currentCar.model}</p>`;
+            carString += `<p class="grandChild"> Year: ${currentCar.year}</p>`;
+            carString += `<p class="grandChild"> Price: $${currentCar.price}</p>`;
+            carString += `<p class="grandChild" id="description"> Description: ${currentCar.description}</p>`;
             carString += `</div></div>`;
 
             carContainer.innerHTML = carString;
