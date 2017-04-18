@@ -52,7 +52,7 @@ You operate a used car lot, and need to have an application where you can update
 
 
 
-![Screen Shot](spa-milestone-challenge-Matthensley777/screenshot.png)
+![Screen Shot](https://github.com/nss-evening-cohort-05/spa-milestone-challenge-Matthensley777/blob/master/screenshot.png)
 
 ##### How to run code
 1. git clone git@github.com:nss-evening-cohort-05/spa-milestone-challenge-Matthensley777.git
