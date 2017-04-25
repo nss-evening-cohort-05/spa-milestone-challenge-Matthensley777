@@ -48,7 +48,7 @@ for (var i = 0; i < cars.length; i++) {
 
     cars.getCurrentCar = function() {
         return currentCar;
-    }```
+    }
     
 
 
