@@ -24,35 +24,7 @@
 1. The final IIFE should augment the object with two more functions. One function resets the border thickness and background color for each car element back to the original values. The other function changes the thickness of the border of a car element, and changes its background color. The function must accept one argument.
     1. A car DOM element that was clicked on.
 
-### A bit of the code which allows you to select each card.
-
-```
-for (var i = 0; i < cars.length; i++) {
-            cars[i].classList.remove("selected");
-        }
-        if (e.target.classList.contains("mainCard")) {
-            e.target.classList.add("selected");
-            e.target.childNodes[4].value = "";
-            currentCar = e.target.childNodes[0].childNodes[4];
-        } else if (e.target.classList.contains("child")) {
-            e.target.parentNode.classList.add("selected");
-            e.target.parentNode.value = "";
-            currentCar = e.target.parentNode.childNodes[0].childNodes[4];
-        } else if (e.target.classList.contains("grandChild")) {
-            currentCar = e.target.parentNode.parentNode.childNodes[0].childNodes[4];
-            e.target.parentNode.parentNode.classList.add("selected");
-            e.target.parentNode.parentNode.value = "";
-        }
-        document.getElementById("text").focus();
-    }
-
-    cars.getCurrentCar = function() {
-        return currentCar;
-    }
-    ```
-    
-
-
+### Screen Shot of the project
 
 
 
