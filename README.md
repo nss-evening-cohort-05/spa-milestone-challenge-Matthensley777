@@ -3,7 +3,6 @@
 
 ## Instructions
 
-You operate a used car lot, and need to have an application where you can update the description and availability of each car in your inventory. You are going to using the Bootstrap grid to lay out your HTML structure.
 
 
 1. Create an array of cars in the `inventory.json` file (see example structure below). Put at least three cars in the array.
@@ -49,7 +48,7 @@ for (var i = 0; i < cars.length; i++) {
 
     cars.getCurrentCar = function() {
         return currentCar;
-    }`
+    }```
     
 
 
