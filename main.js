@@ -1,6 +1,6 @@
 var CarLot = (function(cars) {
 
-
+//clears input box
     document.getElementById("text").addEventListener("keyup", carBoundToText);
 
     function carBoundToText(e) {
@@ -12,13 +12,10 @@ var CarLot = (function(cars) {
         }
     }
 
-     
+
     CarLot.loadInventory();
 
 
     return cars;
 
 })(CarLot || {});
-
-
-

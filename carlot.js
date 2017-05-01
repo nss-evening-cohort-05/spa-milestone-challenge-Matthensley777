@@ -1,15 +1,13 @@
 var CarLot = (function() {
 
-     
-
     var carContainer = document.getElementById("carContainer");
-
+//html for each card
     function carDom(carData) {
         var carString = "";
         var currentCar;
         for (var i = 0; i < carData.length; i++) {
             currentCar = carData[i];
-            carString += `<div class="col-sm-5 col-md-2 mainCard">`;
+            carString += `<div class="col-sm-6 col-md-4 mainCard">`;
             carString += `<div id="container" class="child">`;
             carString += `<h3 class="grandChild" > Make: ${currentCar.make}</h3>`;
             carString += `<p class="grandChild"> Model: ${currentCar.model}</p>`;
@@ -39,9 +37,6 @@ var CarLot = (function() {
         	return cars;
         }
     };
-
-   
-
 
 })(CarLot || {});
 
